@@ -23,7 +23,7 @@ public class Transforms2D extends JPanel {
 			}
 			if(whichTransform == 1)
 			{
-				g2.rotate(Math.PI /2);
+				g2.rotate(Math.PI /4);
 				g2.setPaint(Color.green);
 				g2.drawPolygon(pol);
 				g2.fill(pol);
@@ -31,42 +31,47 @@ public class Transforms2D extends JPanel {
 			}
 			if(whichTransform == 2)
 			{
-				g2.rotate(Math.PI /4);
+				g2.rotate(Math.PI / 4);
+				g2.scale(2, 2);
 				g2.setPaint(Color.green);
 				g2.drawPolygon(pol);
 				g2.fill(pol);
 			}
 			if(whichTransform == 3)
 			{
-				g2.rotate(Math.PI /6);
+				g2.rotate(Math.PI);
 				g2.setPaint(Color.green);
+				g2.scale(1.5, 1.5);
 				g2.drawPolygon(pol);
 				g2.fill(pol);
 			}
 			if(whichTransform == 4)
 			{
 				g2.setPaint(Color.green);
-				g2.scale(1.5, 1.5);
+				g2.scale(2, 1);
 				g2.drawPolygon(pol);
 				g2.fill(pol);
 			}
 			if(whichTransform == 5)
 			{
 				g2.setPaint(Color.green);
-				g2.scale(0.5, 0.5);
+				g2.translate(0, -200);
+				g2.scale(2, 0.5);
 				g2.drawPolygon(pol);
 				g2.fill(pol);
 			}
 			if(whichTransform == 6)
 			{
 				g2.setPaint(Color.green);
-				g2.scale(2, 0.5);
+				g2.rotate(Math.PI / 2);
+				g2.scale(1, 2);
 				g2.drawPolygon(pol);
 				g2.fill(pol);
 			}
 			if(whichTransform == 7)
 			{
-				g2.setPaint(Color.green);
+				g2.setPaint(Color.blue);
+				g2.rotate(Math.PI);
 				g2.translate(100,50);
 				g2.drawPolygon(pol);
 				g2.fill(pol);
@@ -75,16 +80,19 @@ public class Transforms2D extends JPanel {
 			{
 				g2.setPaint(Color.green);
 				g2.rotate(Math.PI / 4);
-				g2.scale(0.5, 2);
+				g2.scale(1.5, 1);
+				g2.translate(80, 100);
 				g2.drawPolygon(pol);
 				g2.fill(pol);
 			}
 			if(whichTransform == 9)
 			{
 				g2.setPaint(Color.blue);
-				g2.rotate(Math.PI / 2);
-				g2.scale(0.5, 0.5);
-				g2.translate(10, 200);
+				g2.rotate(Math.PI / 4);
+				g2.scale(1, 0.5);		
+				
+				g2.translate(150, -100);
+				
 				g2.drawPolygon(pol);
 				g2.fill(pol);
 			}
